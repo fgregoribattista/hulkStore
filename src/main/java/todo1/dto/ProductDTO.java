@@ -10,5 +10,7 @@ public @Data class ProductDTO {
 
 	private String description;
 
+	private Long brandId;
+
 	private BrandDTO brand;
 }

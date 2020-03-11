@@ -56,6 +56,25 @@ GET: http://localhost:8080/api/v1/products/5
     }
 }
 ```
+POST: http://localhost:8080/api/v1/products
+```
+BODY{
+        "code": 1,
+        "description": "VASO-PEQUEÑO",
+        "brandId": 1
+    }
+```
+PUT: http://localhost:8080/api/v1/products/35
+```
+BODY{
+        "code": 1,
+        "description": "VASO-PEQUEÑO",
+        "brandId": 1
+    }
+```
+DELETE: http://localhost:8080/api/v1/products/31
+
+
 GET: http://localhost:8080/api/v1/stocks
 
 ```

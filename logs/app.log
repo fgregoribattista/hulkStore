@@ -1,5 +1,0 @@
-2020-03-09 19:38:59,654 INFO t.KardexApplication [restartedMain] Starting KardexApplication on MJ143018 with PID 1884 (C:\Users\fgregoribattista\src\BackEndTodo1-master\target\classes started by fgregoribattista in C:\Users\fgregoribattista\src\BackEndTodo1-master)
-2020-03-09 19:38:59,659 INFO t.KardexApplication [restartedMain] No active profile set, falling back to default profiles: default
-2020-03-09 19:39:02,549 INFO t.KardexApplication [restartedMain] Started KardexApplication in 3.21 seconds (JVM running for 5.082)
-2020-03-09 19:39:02,551 INFO t.KardexApplication [restartedMain] Se inicia la carga de productos y stock inicial
-2020-03-09 19:39:02,733 INFO t.KardexApplication [restartedMain] Fin de carga inicial.

@@ -5,12 +5,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.test.context.SpringBootTest;
-import todo1.exceptions.ProductNotFoundException;
+
+import todo1.exceptions.*;
 import todo1.model.Brand;
 import todo1.model.Product;
+import todo1.repository.BrandRepository;
 import todo1.repository.ProductRepository;
 import java.util.Optional;
+
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
@@ -21,6 +25,9 @@ public class ProductServiceTests {
 
 	@Mock
 	private ProductRepository repository;
+
+	@Mock
+	private BrandRepository brandRepository;
 
 	@BeforeEach
 	void setMock() {
@@ -69,5 +76,4 @@ public class ProductServiceTests {
 
 		});
 	}
-
 }

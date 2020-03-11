@@ -6,16 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import todo1.exceptions.ProductNotFoundException;
 import todo1.model.Brand;
 import todo1.model.Product;
 import todo1.model.Stock;
 import todo1.repository.BrandRepository;
 import todo1.repository.ProductRepository;
 import todo1.repository.StockRepository;
-
-import java.time.LocalTime;
-
 
 
 @SpringBootApplication
@@ -29,6 +25,7 @@ public class KardexApplication implements CommandLineRunner {
 	private static final String JUGUETE = "JUGUETE";
 	private static final String ACCESORIO = "ACCESORIO";
 	private static final Long CANTIDAD = 100L;
+	private static final Long SIN_CANTIDAD = 0L;
 	
 	
 	@Autowired
@@ -231,12 +228,12 @@ public class KardexApplication implements CommandLineRunner {
 
 		Stock stockComicsAlt= new Stock();
 		stockComicsAlt.setProduct(productComicsAlt);
-		stockComicsAlt.setQuantity(CANTIDAD);
+		stockComicsAlt.setQuantity(SIN_CANTIDAD);
 		stockRepository.save(stockComicsAlt);
 
 		Stock stockJugueteAlt = new Stock();
 		stockJugueteAlt.setProduct(productJugueteAlt);
-		stockJugueteAlt.setQuantity(CANTIDAD);
+		stockJugueteAlt.setQuantity(SIN_CANTIDAD);
 		stockRepository.save(stockJugueteAlt);
 
 
